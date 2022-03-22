@@ -1,3 +1,31 @@
+### Contact index
+GET http://localhost:3000/contacts
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjozLCJleHAiOjE2Mjk5OTI4NjR9.G2ExsrDYn3oE0vJkvm4T6Po2GbNpH5cqTEaVPVuK_MA
+
+### Contact create
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "first_name": "Chloe",
+  "last_name": "Unell",
+  "email": "CUnell@test.com",
+  "phone_number": "7735551234"
+}
+
+
+### Contact update
+PATCH http://localhost:3000/contacts/0
+Content-Type: application/json
+
+{
+  "first_name": "John"
+}
+
+### Contact delete
+DELETE http://localhost:3000/contacts
+
+
 ### Users create (signup)
 POST http://localhost:3000/users
 Content-Type: application/json
